@@ -2,11 +2,11 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Footer() {
   return (
-    <footer className="bg-gray-100 py-8">
+    <footer className="bg-gray-100 py-8 mt-10 md:mt-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Logo and Contact Section */}
-          <div className="space-y-5 md:w-1/4">
+          <div className="space-y-7 md:w-1/4">
             <div className="flex items-center space-x-1">
               <span className="text-red-500 text-3xl font-bold">U</span>
               <span className="text-blue-500 text-3xl font-bold">n</span>
@@ -14,23 +14,25 @@ function Footer() {
               <span className="text-green-500 text-3xl font-bold">f</span>
               <span className="text-black text-3xl font-bold">y</span>
             </div>
+            <div>
             <p className="text-md text-gray-600">+123456789</p>
             <p className="text-md text-gray-600">example@gmail.com</p>
-            <div className="flex space-x-3 mt-4">
-              <a href="#" className="text-gray-600 hover:text-gray-800">
-                <i className="fab fa-linkedin fa-xl"></i>
+            </div>
+            <div className="flex space-x-4 mt-4">
+              <a href="#" className="text-gray-500 hover:text-gray-800">
+                <i className="fab fa-linkedin fa-2xl"></i>
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-800">
-                <i className="fab fa-twitter fa-xl"></i>
+              <a href="#" className="text-gray-500 hover:text-gray-800">
+                <i className="fab fa-twitter fa-2xl"></i>
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-800">
-                <i className="fab fa-facebook fa-xl"></i>
+              <a href="#" className="text-gray-500 hover:text-gray-800">
+                <i className="fab fa-facebook fa-2xl"></i>
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-800">
-                <i className="fab fa-instagram fa-xl"></i>
+              <a href="#" className="text-gray-500 hover:text-gray-800">
+                <i className="fab fa-instagram fa-2xl"></i>
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-800">
-                <i className="fab fa-youtube fa-xl"></i>
+              <a href="#" className="text-gray-500 hover:text-gray-800">
+                <i className="fab fa-youtube fa-2xl"></i>
               </a>
             </div>
           </div>
