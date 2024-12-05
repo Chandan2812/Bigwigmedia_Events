@@ -18,6 +18,22 @@ function Universities() {
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2020/06/Lovely-Professional-University-Logo.png" alt="" />
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2020/06/Galgotias-1.png" alt="" />
         </div>
+
+        <div className="bg-gradient-to-b from-blue-50 via-gray-100 to-white py-16">
+            <h1 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 leading-tight md:leading-snug px-4">
+                Embrace Enrollment Growth with Unify’s Higher Education Admissions CRM
+            </h1>
+            <p className="text-justify md:text-center text-gray-600 px-8 mt-4 md:mt-6 text-lg md:text-xl md:max-w-6xl mx-auto">
+                Leading higher education institutions are turning to Unify CRM, previously known as NoPaperForms, to revolutionize their traditionally disjointed admissions processes.
+                The fragmented nature of old methods often leads to a systemic disconnect among stakeholders, inefficiencies, assumption-driven decision making, poor conversion rates, and a sub-par experience for potential students.
+            </p>
+            <p className="text-justify md:text-center text-gray-600 px-8 mt-6 md:mt-10 text-lg md:text-xl md:max-w-6xl mx-auto">
+                Unify is a game-changer, transforming admissions into a unified and streamlined operation. With features enabling the centralisation of all inquiries, automated application processing, customisable post-application procedures, and a swift enrolment with an integrated unified payment solution, Unify brings your teams onto a single platform. 
+                It not only boosts efficiency but also enhances the candidate’s journey, paving the way for the future of higher education admissions.
+            </p>
+            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2023/07/CRM-Funnel-Updated-02.png" alt="" className="mt-10 md:mt-16 mx-auto md:max-w-2xl " />
+        </div>
+
         </div>
     );
 }
