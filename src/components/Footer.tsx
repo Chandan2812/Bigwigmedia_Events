@@ -2,7 +2,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Footer() {
   return (
-    <footer className="bg-gray-100 py-8 mt-10 md:mt-20">
+    <footer className="bg-gray-100 py-8 ">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Logo and Contact Section */}
