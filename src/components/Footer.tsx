@@ -4,18 +4,18 @@ function Footer() {
   return (
     <footer className="bg-gray-100 py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between gap-10">
+        <div className="flex flex-col md:flex-row justify-between">
           {/* Logo and Contact Section */}
-          <div className="space-y-4 md:w-1/3">
-            <div className="flex items-center space-x-1 ml-5">
-              <span className="text-red-500 text-2xl font-bold">U</span>
-              <span className="text-blue-500 text-2xl font-bold">n</span>
-              <span className="text-yellow-500 text-2xl font-bold">i</span>
-              <span className="text-green-500 text-2xl font-bold">f</span>
-              <span className="text-black text-2xl font-bold">y</span>
+          <div className="space-y-5 md:w-1/4">
+            <div className="flex items-center space-x-1">
+              <span className="text-red-500 text-3xl font-bold">U</span>
+              <span className="text-blue-500 text-3xl font-bold">n</span>
+              <span className="text-yellow-500 text-3xl font-bold">i</span>
+              <span className="text-green-500 text-3xl font-bold">f</span>
+              <span className="text-black text-3xl font-bold">y</span>
             </div>
-            <p className="text-sm text-gray-600">+123456789</p>
-            <p className="text-sm text-gray-600">example@gmail.com</p>
+            <p className="text-md text-gray-600">+123456789</p>
+            <p className="text-md text-gray-600">example@gmail.com</p>
             <div className="flex space-x-3 mt-4">
               <a href="#" className="text-gray-600 hover:text-gray-800">
                 <i className="fab fa-linkedin fa-xl"></i>
