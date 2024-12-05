@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-gray-100 py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between">
+        <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Logo and Contact Section */}
           <div className="space-y-5 md:w-1/4">
             <div className="flex items-center space-x-1">

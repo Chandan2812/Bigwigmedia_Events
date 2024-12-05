@@ -3,7 +3,7 @@ function Universities() {
     return (
         <div>
 
-        <h1 className="mt-20 text-3xl font-bold text-center text-gray-700">The lifeblood of Admission Management in India!</h1>
+        <h1 className="mt-12 md:mt-20 text-2xl md:text-3xl font-bold text-center text-gray-700">The lifeblood of Admission Management in India!</h1>
         <div className="grid grid-cols-2 md:grid-cols-6 p-8 md:p-14 gap-10">
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/Manipal.png" alt="" />
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/SRM.png" alt="" />
