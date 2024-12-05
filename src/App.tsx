@@ -1,11 +1,11 @@
 
 import './App.css'
-import Nav from './components/Nav';
+import Landing from './pages/Landing';
 
 const App = () => {
   return (
     <>
-    <Nav/>
+    <Landing/>
  
     </>
   );
