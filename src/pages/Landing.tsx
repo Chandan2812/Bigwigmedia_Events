@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Nav from "../components/Nav";
+import Universities from "../components/Universities";
 
 
 function Landing() {
@@ -8,6 +9,7 @@ function Landing() {
         <div>
             <Nav/>
             <Hero/>
+            <Universities/>
             <Footer/>
         </div>
     );
