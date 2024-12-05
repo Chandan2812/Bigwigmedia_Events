@@ -1,12 +1,11 @@
-import React from 'react';
 
 function Hero() {
   return (
-    <div className="bg-blue-50 py-16 px-12 mt-10">
+    <div className="bg-blue-50 py-16 px-8 md:px-12 mt-10">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-5 items-center gap-8">
         {/* Left Content */}
         <div className="md:col-span-3">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+          <h1 className="text-2xl md:text-5xl font-bold text-gray-800 leading-tight">
             Higher Education CRM: <br />
             One Platform to Scale your Admissions
           </h1>

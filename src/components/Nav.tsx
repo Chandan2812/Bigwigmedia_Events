@@ -37,7 +37,7 @@ function Nav() {
 
         {/* Hamburger Icon (for mobile) */}
         <button
-          className="md:hidden text-gray-600 hover:text-black focus:outline-none"
+          className="md:hidden text-gray-600 hover:text-black focus:outline-none z-50"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
@@ -72,21 +72,28 @@ function Nav() {
         </div>
       </div>
 
-      {/* Dropdown Menu for Mobile */}
-      {isOpen && (
-        <div className="absolute top-12 right-0 bg-white shadow-lg rounded-md p-4 flex flex-col space-y-4 z-50 h-[50vh] w-full max-w-md">
-          <div className="flex flex-col flex-grow space-y-4">
-            <button className="hover:text-black">Home</button>
-            <button className="hover:text-black">Profile</button>
-            <button className="hover:text-black">About Us</button>
-            <button className="hover:text-black">Contact</button>
-          </div>
+{/* Overlay for Darkening/Blur Effect */}
+{isOpen && (
+  <div className="fixed inset-0 top-20 right-0 bg-black bg-opacity-70 z-40" /> // z-40 ensures overlay is behind the dropdown
+)}
 
-          <button className="w-1/2 mx-auto bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded focus:outline-none mt-auto">
-            Schedule a Demo
-          </button>
-        </div>
-      )}
+{/* Dropdown Menu for Mobile */}
+{isOpen && (
+  <div className="absolute top-20 right-0 bg-white shadow-lg rounded-md p-4 flex flex-col space-y-4 z-50 h-[30vh] w-full max-w-md">
+    <div className="flex flex-col space-y-4">
+      <button className="hover:text-black">Home</button>
+      <button className="hover:text-black">Profile</button>
+      <button className="hover:text-black">About Us</button>
+      <button className="hover:text-black">Contact</button>
+
+      {/* "Schedule a Demo" Button Below the Contact Button */}
+      <button className="w-2/3 mx-auto bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded focus:outline-none mt-8">
+        Schedule a Demo
+      </button>
+    </div>
+  </div>
+)}
+
     </nav>
   );
 }
