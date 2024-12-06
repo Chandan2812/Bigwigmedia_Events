@@ -66,9 +66,9 @@ function Nav() {
 
         {/* Call-to-Action Button */}
         <div className="md:block hidden">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded focus:outline-none">
-            Schedule a Demo
-          </button>
+          <a href='#faq' className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded focus:outline-none">
+            FAQ
+          </a>
         </div>
       </div>
 
@@ -81,15 +81,20 @@ function Nav() {
 {isOpen && (
   <div className="absolute top-20 right-0 bg-white shadow-lg rounded-md p-4 flex flex-col space-y-4 z-50 h-[30vh] w-full max-w-md">
     <div className="flex flex-col space-y-4">
-      <button className="hover:text-black">Home</button>
-      <button className="hover:text-black">Features</button>
-      <button className="hover:text-black">About Us</button>
-      <button className="hover:text-black">Contact</button>
+      <button onClick={() => setIsOpen(false)} className="hover:text-black">Home</button>
+      <button onClick={() => setIsOpen(false)} className="hover:text-black">Features</button>
+      <button onClick={() => setIsOpen(false)} className="hover:text-black">About Us</button>
+      <button onClick={() => setIsOpen(false)} className="hover:text-black">Contact</button>
 
-      {/* "Schedule a Demo" Button Below the Contact Button */}
-      <button className="w-2/3 mx-auto bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded focus:outline-none mt-8">
-        Schedule a Demo
-      </button>
+      <div className="mx-auto w-full sm:w-2/3">
+      <a
+        href="#faq"
+        onClick={() => setIsOpen(false)}
+        className="w-1/2 mx-auto block text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg focus:outline-none text-lg sm:text-xl shadow-md"
+      >
+        FAQ
+      </a>
+    </div>
     </div>
   </div>
 )}
