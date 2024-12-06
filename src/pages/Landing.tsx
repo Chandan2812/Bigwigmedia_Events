@@ -15,8 +15,8 @@ function Landing() {
             <Nav/>
             <Hero/>
             <Universities/>
-            <AboutUs/>
             <Features/>
+            <AboutUs/>
             <FAQ/>
             <ContactUs/>
             <Footer/>

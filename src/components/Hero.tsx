@@ -2,20 +2,16 @@ import Slider from 'react-slick';
 import styled from 'styled-components';
 import '../App.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Importing Font Awesome icons
+import image1 from "../assets/20945376.jpg"
+import image2 from "../assets/7038058.jpg"
+import image3 from "../assets/business-scene-top-view.jpg"
+import image4 from "../assets/still-life-business-roles-with-various-pawns.jpg"
 
 const images = [
-    {
-        logo: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
-    },
-    {
-        logo: "https://img.freepik.com/free-photo/vibrant-bouquet-colorful-flowers-reflects-love-nature-generated-by-artificial-intelligence_188544-150453.jpg?semt=ais_hybrid",
-    },
-    {
-        logo: "https://tinypng.com/images/social/website.jpg",
-    },
-    {
-        logo: "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-autumn-nature-with-trees-of-yellow-leaves-free-image.jpeg?w=600&quality=80",
-    }
+    { logo: image1 },
+    { logo: image2 },
+    { logo: image3 },
+    { logo: image4 },
 ];
 
 const Hero = () => {
@@ -27,7 +23,7 @@ const Hero = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        pauseOnHover: true,
+        pauseOnHover: false,
         prevArrow: <FaChevronLeft />,
         nextArrow: <FaChevronRight />,
         responsive: [
@@ -146,7 +142,7 @@ background-color: var(--white-color);
 const Logo = styled.img`
     width: 100%;  /* Full width of container */
     height: 100%;  /* Full height of container */
-    object-fit: cover;  /* Ensure the image covers the container without stretching */
+    object-fit:fill ;  /* Ensure the image covers the container without stretching */
 `;
 
 export default Hero;
