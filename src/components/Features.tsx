@@ -1,6 +1,6 @@
 function Features() {
   return (
-    <div className="py-16 px-12">
+    <div id="features" className="py-16 px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
         {/* Left Content for Feature 1 */}
         <div>

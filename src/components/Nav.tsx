@@ -6,17 +6,22 @@ function Nav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if user has scrolled down
       setIsScrolled(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleScrollToSection = (id:any) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    setIsOpen(false); // Close mobile menu if open
+  };
 
   return (
     <nav
@@ -24,9 +29,7 @@ function Nav() {
         isScrolled ? 'bg-white shadow-md' : 'bg-blue-50'
       }`}
     >
-      {/* Rest of the Navbar Code */}
       <div className="flex items-center justify-between p-4 md:px-10 relative">
-        {/* Logo Section */}
         <div className="flex items-center space-x-1 ml-5">
           <span className="text-red-500 text-2xl font-bold">U</span>
           <span className="text-blue-500 text-2xl font-bold">n</span>
@@ -35,7 +38,6 @@ function Nav() {
           <span className="text-black text-2xl font-bold">y</span>
         </div>
 
-        {/* Hamburger Icon (for mobile) */}
         <button
           className="md:hidden text-gray-600 hover:text-black focus:outline-none z-50"
           onClick={() => setIsOpen(!isOpen)}
@@ -56,49 +58,58 @@ function Nav() {
           </svg>
         </button>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 space-x-6 text-gray-600">
-          <button className="hover:text-black">Home</button>
-          <button className="hover:text-black">Features</button>
-          <button className="hover:text-black">About Us</button>
-          <button className="hover:text-black">Contact</button>
+          <button onClick={() => handleScrollToSection('home')} className="hover:text-black">
+            Home
+          </button>
+          <button onClick={() => handleScrollToSection('features')} className="hover:text-black">
+            Features
+          </button>
+          <button onClick={() => handleScrollToSection('about')} className="hover:text-black">
+            About Us
+          </button>
+          <button onClick={() => handleScrollToSection('contact')} className="hover:text-black">
+            Contact
+          </button>
         </div>
 
-        {/* Call-to-Action Button */}
         <div className="md:block hidden">
-          <a href='#faq' className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded focus:outline-none">
+          <button
+            onClick={() => handleScrollToSection('faq')}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded focus:outline-none"
+          >
             FAQ
-          </a>
+          </button>
         </div>
       </div>
 
-{/* Overlay for Darkening/Blur Effect */}
-{isOpen && (
-  <div className="fixed inset-0 top-20 right-0 bg-black bg-opacity-70 z-40" /> // z-40 ensures overlay is behind the dropdown
-)}
+      {/* Overlay for Darkening/Blur Effect */}
+    {isOpen && (
+      <div className="fixed inset-0 top-20 right-0 bg-black bg-opacity-70 z-40" /> // z-40 ensures overlay is behind the dropdown
+    )}
 
-{/* Dropdown Menu for Mobile */}
-{isOpen && (
-  <div className="absolute top-20 right-0 bg-white shadow-lg rounded-md p-4 flex flex-col space-y-4 z-50 h-[30vh] w-full max-w-md">
-    <div className="flex flex-col space-y-4">
-      <button onClick={() => setIsOpen(false)} className="hover:text-black">Home</button>
-      <button onClick={() => setIsOpen(false)} className="hover:text-black">Features</button>
-      <button onClick={() => setIsOpen(false)} className="hover:text-black">About Us</button>
-      <button onClick={() => setIsOpen(false)} className="hover:text-black">Contact</button>
-
-      <div className="mx-auto w-full sm:w-2/3">
-      <a
-        href="#faq"
-        onClick={() => setIsOpen(false)}
-        className="w-1/2 mx-auto block text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg focus:outline-none text-lg sm:text-xl shadow-md"
-      >
-        FAQ
-      </a>
-    </div>
-    </div>
-  </div>
-)}
-
+      {isOpen && (
+        <div className="absolute top-14 right-0 bg-white shadow-lg rounded-md p-4 flex flex-col space-y-4 z-50 h-[30vh] w-full max-w-md">
+          <button onClick={() => handleScrollToSection('home')} className="hover:text-black">
+            Home
+          </button>
+          <button onClick={() => handleScrollToSection('features')} className="hover:text-black">
+            Features
+          </button>
+          <button onClick={() => handleScrollToSection('about')} className="hover:text-black">
+            About Us
+          </button>
+          <button onClick={() => handleScrollToSection('contact')} className="hover:text-black">
+            Contact
+          </button>
+          <button
+            onClick={() => handleScrollToSection('faq')}
+            className="w-1/2 mx-auto block text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg focus:outline-none text-lg sm:text-xl shadow-md"
+          >
+            FAQ
+          </button>
+        </div>
+      )}
     </nav>
   );
 }

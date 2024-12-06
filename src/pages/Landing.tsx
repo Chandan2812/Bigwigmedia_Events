@@ -4,16 +4,20 @@ import Hero from "../components/Hero";
 import Nav from "../components/Nav";
 import Universities from "../components/Universities";
 import Features from "../components/Features";
+import AboutUs from "../components/AboutUs";
+import ContactUs from "../components/Contact";
 
 
 function Landing() {
     return (
-        <div>
+        <div id="home">
             <Nav/>
             <Hero/>
             <Universities/>
+            <AboutUs/>
             <Features/>
             <FAQ/>
+            <ContactUs/>
             <Footer/>
         </div>
     );
