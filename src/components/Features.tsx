@@ -1,3 +1,4 @@
+
 function Features() {
   const featureData = [
     {
@@ -111,21 +112,21 @@ function Features() {
   ];
 
   return (
-    <div id="features" className="py-16 px-12">
+    <div id="features" className="py-16 px-8 sm:px-12">
       {featureData.map((feature, index) => (
         <div
           key={index}
-          className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 mt-${index === 0 ? 0 : 16}`}
+          className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-2 md:gap-8 mt-${index === 0 ? 0 : 16}`}
         >
           {/* Feature */}
           <div className={index % 2 === 0 ? "" : "order-1 md:order-2"}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight hover:text-blue-600 transition-colors duration-300">
               {feature.title}
             </h2>
             <p className="text-lg text-gray-600 mt-4">{feature.description}</p>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800">
               {feature.listItems.map((item, i) => (
-                <ul key={i}>
+                <ul key={i} className="hover:text-blue-500 transition-colors duration-300">
                   <li className="flex items-center gap-2">
                     <span className="text-blue-500 text-xl">✔</span> {item}
                   </li>
@@ -134,11 +135,12 @@ function Features() {
             </div>
           </div>
 
-          <div className="flex justify-center">
+          {/* Image */}
+          <div className="flex justify-center mb-10 md:mb-4 order-2 md:order-1">
             <img
               src={feature.imageUrl}
               alt={feature.title}
-              className="w-full max-w-md md:max-w-lg"
+              className="w-full max-w-md md:max-w-lg hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
@@ -147,4 +149,4 @@ function Features() {
   );
 }
 
-export default Features
+export default Features;
