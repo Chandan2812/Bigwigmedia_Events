@@ -80,9 +80,11 @@ const StyledSlider = styled(Slider)`
     .slick-prev, .slick-next {
         background-color: white;
         border: none;
+        border-radius:20px;
+        padding:2px;
         color: var(--teal-color);
-        font-size: 2rem;
-        z-index: 10; /* Ensure arrows are above the image */
+        font-size: 1rem;
+        z-index: 10;
         cursor: pointer;
         transition: color 0.3s ease;
         position: absolute; /* Position arrows absolutely on top */
