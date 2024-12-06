@@ -59,7 +59,7 @@ function Nav() {
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 space-x-6 text-gray-600">
           <button className="hover:text-black">Home</button>
-          <button className="hover:text-black">Profile</button>
+          <button className="hover:text-black">Features</button>
           <button className="hover:text-black">About Us</button>
           <button className="hover:text-black">Contact</button>
         </div>
@@ -82,7 +82,7 @@ function Nav() {
   <div className="absolute top-20 right-0 bg-white shadow-lg rounded-md p-4 flex flex-col space-y-4 z-50 h-[30vh] w-full max-w-md">
     <div className="flex flex-col space-y-4">
       <button className="hover:text-black">Home</button>
-      <button className="hover:text-black">Profile</button>
+      <button className="hover:text-black">Features</button>
       <button className="hover:text-black">About Us</button>
       <button className="hover:text-black">Contact</button>
 

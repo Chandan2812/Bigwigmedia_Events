@@ -1,88 +1,152 @@
+import Slider from 'react-slick';
+import styled from 'styled-components';
+import '../App.css';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Importing Font Awesome icons
 
-function Hero() {
-  return (
-    <div className="bg-blue-50 py-16 px-8 md:px-12 mt-10">
-      <div className="mx-auto grid grid-cols-1 md:grid-cols-5 items-center gap-8">
-        {/* Left Content */}
-        <div className="md:col-span-3">
-          <h1 className="text-2xl md:text-5xl font-bold text-gray-800 leading-tight">
-            Higher Education CRM: <br />
-            One Platform to Scale your Admissions
-          </h1>
-          <p className="text-lg text-gray-600 mt-4">
-            Transform the way you Attract, Engage, and Enrol students with India's
-            largest Enrolment Automation Platform for Higher Education.
-          </p>
-          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800">
-            <ul>
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500 text-xl">✔</span> Enquiry to Enrolment Funnelling
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500 text-xl">✔</span> 360° Communication Suite
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500 text-xl">✔</span> Advance Reports & Analytics Engine
-              </li>
-            </ul>
-            <ul>
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500 text-xl">✔</span> Automate & Track Student Journey
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500 text-xl">✔</span> Marketing ROI Optimisation
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-blue-500 text-xl">✔</span> Inbuilt Payment & Financing Platform
-              </li>
-            </ul>
-          </div>
-        </div>
+const images = [
+    {
+        logo: "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+    },
+    {
+        logo: "https://img.freepik.com/free-photo/vibrant-bouquet-colorful-flowers-reflects-love-nature-generated-by-artificial-intelligence_188544-150453.jpg?semt=ais_hybrid",
+    },
+    {
+        logo: "https://tinypng.com/images/social/website.jpg",
+    },
+    {
+        logo: "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-autumn-nature-with-trees-of-yellow-leaves-free-image.jpeg?w=600&quality=80",
+    }
+];
 
-        {/* Right Content (Form) */}
-        <div className="md:col-span-2 bg-white rounded-xl shadow-lg px-6 py-10">
-          <h2 className="text-lg font-bold text-gray-800 mb-4">
-            See our Education CRM in Action
-          </h2>
-          <form className="space-y-6">
-            <input
-              type="text"
-              placeholder="Name *"
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-200"
-            />
-            <input
-              type="email"
-              placeholder="Email Address *"
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-200"
-            />
-            <div className="flex gap-2">
-              <select className="border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-200">
-                <option value="+91">+91</option>
-                <option value="+1">+1</option>
-                <option value="+44">+44</option>
-              </select>
-              <input
-                type="text"
-                placeholder="Mobile Number *"
-                className="flex-1 border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-200"
-              />
+const Hero = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1, // Show one image at a time
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        prevArrow: <FaChevronLeft />,
+        nextArrow: <FaChevronRight />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    };
+
+    return (
+        <div className='bg-blue-50 pt-20 md:pt-24'> {/* Add pt-32 for top padding, creates space below nav */}
+            <div className="w-full">
+                <StyledSlider {...settings}>
+                    {images.map((image, index) => (
+                        <div key={index} className="tool-item p-0"> {/* Removed padding for no gap */}
+                                <LogoAndName>
+                                    <Logo src={image.logo} alt={`logo`} />
+                                </LogoAndName>
+                        </div>
+                    ))}
+                </StyledSlider>
             </div>
-            <input
-              type="text"
-              placeholder="Organization Website *"
-              className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-200"
-            />
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
-            >
-              Request a Demo
-            </button>
-          </form>
         </div>
-      </div>
-    </div>
-  );
-}
+    );
+};
+
+const StyledSlider = styled(Slider)`
+    .slick-list {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;  /* Hide overflow if any */
+    }
+
+    .slick-dots {
+        bottom: 0px;  /* Adjust dot position */
+        z-index: 1; /* Ensure dots are above other content */
+        position: relative;
+        background-color: var(--blue-color); /* Set background color */
+        padding: 10px 0;  /* Reduced padding for better positioning */
+        border-radius: 10px;
+    }
+
+    .slick-prev, .slick-next {
+        background-color: white;
+        border: none;
+        color: var(--teal-color);
+        font-size: 2rem;
+        z-index: 10; /* Ensure arrows are above the image */
+        cursor: pointer;
+        transition: color 0.3s ease;
+        position: absolute; /* Position arrows absolutely on top */
+        top: 50%; /* Center the arrows vertically */
+        transform: translateY(-50%); /* Align the arrows in the center */
+    }
+
+    .slick-prev {
+        left: 20px; /* Position left arrow closer to the left edge */
+    }
+
+    .slick-next {
+        right: 20px; /* Position right arrow closer to the right edge */
+    }
+
+    /* Hide arrows on mobile screens */
+    @media (max-width: 1024px) {
+        .slick-prev, .slick-next {
+            display: none !important; /* Ensure arrows are hidden */
+        }
+
+        .slick-dots {
+            padding: 5px 0;  /* Reduce padding for mobile to minimize gap */
+        }
+    }
+
+    /* Ensure arrows are visible on desktop */
+    @media (min-width: 1024px) {
+        .slick-prev, .slick-next {
+            display: block !important; /* Force the arrows to show on desktop */
+        }
+    }
+
+    /* Add hover effect for the arrows */
+    .slick-prev:hover, .slick-next:hover {
+        color: var(--blue-color); /* Or any other color you prefer */
+    }
+`;
+
+const LogoAndName = styled.div`
+background-color: var(--white-color);
+    box-shadow: 0 8px 8px var(--teal-color);
+    height: 500px; /* Fixed height for carousel */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow if content exceeds */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+        height: 300px; /* Reduced height for mobile view */
+    }
+`;
+
+const Logo = styled.img`
+    width: 100%;  /* Full width of container */
+    height: 100%;  /* Full height of container */
+    object-fit: cover;  /* Ensure the image covers the container without stretching */
+`;
 
 export default Hero;

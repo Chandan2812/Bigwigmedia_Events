@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Nav from "../components/Nav";
 import Universities from "../components/Universities";
+import Features from "../components/Features";
 
 
 function Landing() {
@@ -11,6 +12,7 @@ function Landing() {
             <Nav/>
             <Hero/>
             <Universities/>
+            <Features/>
             <FAQ/>
             <Footer/>
         </div>
