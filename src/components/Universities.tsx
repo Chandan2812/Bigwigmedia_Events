@@ -24,12 +24,10 @@ function Universities() {
                 Embrace Enrollment Growth with Unify’s Higher Education Admissions CRM
             </h1>
             <p className="text-justify md:text-center text-gray-600 px-8 mt-4 md:mt-6 text-lg md:text-xl md:max-w-6xl mx-auto">
-                Leading higher education institutions are turning to Unify CRM, previously known as NoPaperForms, to revolutionize their traditionally disjointed admissions processes.
-                The fragmented nature of old methods often leads to a systemic disconnect among stakeholders, inefficiencies, assumption-driven decision making, poor conversion rates, and a sub-par experience for potential students.
+            Unify CRM, formerly known as NoPaperForms, is revolutionizing higher education admissions by streamlining traditionally fragmented processes. Outdated methods often result in stakeholder disconnects, inefficiencies, assumption-based decisions, low conversion rates, and a subpar experience for prospective students.
             </p>
             <p className="text-justify md:text-center text-gray-600 px-8 mt-6 md:mt-10 text-lg md:text-xl md:max-w-6xl mx-auto">
-                Unify is a game-changer, transforming admissions into a unified and streamlined operation. With features enabling the centralisation of all inquiries, automated application processing, customisable post-application procedures, and a swift enrolment with an integrated unified payment solution, Unify brings your teams onto a single platform. 
-                It not only boosts efficiency but also enhances the candidate’s journey, paving the way for the future of higher education admissions.
+            Unify transforms admissions into a seamless and unified operation. By centralizing inquiries, automating application processing, offering customizable post-application workflows, and enabling rapid enrollment with an integrated payment solution, Unify brings your teams together on a single platform. This not only improves efficiency but also elevates the candidate experience, setting a new standard for the future of higher education admissions.
             </p>
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2023/07/CRM-Funnel-Updated-02.png" alt="" className="mt-10 md:mt-16 mx-auto md:max-w-2xl " />
         </div>
