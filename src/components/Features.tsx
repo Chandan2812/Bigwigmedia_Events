@@ -11,7 +11,7 @@ function Features() {
         "Improved Tracking",
         "Seamless Workflow",
       ],
-      imageUrl: "https://t3softwares.com/wp-content/uploads/2023/09/5-1.png",
+      imageUrl: "https://ishinfo.com/images/admission5.png",
     },
     {
       title: "Paid Application Management",
@@ -23,7 +23,7 @@ function Features() {
         "Payment Confirmation",
         "Transparency in Payment Process",
       ],
-      imageUrl: "https://t3softwares.com/wp-content/uploads/2023/09/5-2.png",
+      imageUrl: "https://www.paatham.in/assets/images/1.webp",
     },
     {
       title: "Lead Management",
@@ -35,7 +35,7 @@ function Features() {
         "Performance Monitoring",
         "Conversion Optimisation",
       ],
-      imageUrl: "https://t3softwares.com/wp-content/uploads/2023/09/5-1.png",
+      imageUrl: "https://www.whsuites.com/wp-content/uploads/2019/08/lead-management-1024x930.png",
     },
     {
       title: "Counselor Management",
@@ -47,7 +47,7 @@ function Features() {
         "Centralised Communication",
         "Real-Time Insights",
       ],
-      imageUrl: "https://t3softwares.com/wp-content/uploads/2023/09/5-1.png",
+      imageUrl: "https://www.shutterstock.com/image-vector/female-psychotherapist-has-individual-session-600nw-2338163245.jpg",
     },
     {
       title: "Student Panel",
@@ -59,7 +59,7 @@ function Features() {
         "Fee Management",
         "Call History",
       ],
-      imageUrl: "https://t3softwares.com/wp-content/uploads/2023/09/5-1.png",
+      imageUrl: "https://static.vecteezy.com/system/resources/previews/023/129/004/non_2x/character-high-school-student-in-school-uniform-illustration-vector.jpg",
     },
     {
       title: "Admin Panel",
@@ -71,7 +71,7 @@ function Features() {
         "Staff Monitoring",
         "Real-Time Performance Tracking",
       ],
-      imageUrl: "https://t3softwares.com/wp-content/uploads/2023/09/5-1.png",
+      imageUrl: "https://themeselection-cdn.b-cdn.net/wp-content/uploads/2022/07/category-laravel.png",
     },
     {
       title: "Vendor Management Panel",
@@ -83,7 +83,7 @@ function Features() {
         "Centralized Communication",
         "Improved Collaboration",
       ],
-      imageUrl: "https://t3softwares.com/wp-content/uploads/2023/09/5-1.png",
+      imageUrl: "https://media.licdn.com/dms/image/C5112AQHEb--L7Wfg7g/article-cover_image-shrink_600_2000/0/1587203952366?e=2147483647&v=beta&t=WuVfGMbeHjQrIHEmRTugRLH9cIUkIY8M-BSXS_MCCUk",
     },
     {
       title: "Document Verification",
@@ -95,7 +95,7 @@ function Features() {
         "Compliance Monitoring",
         "Authenticity Checks",
       ],
-      imageUrl: "https://t3softwares.com/wp-content/uploads/2023/09/5-1.png",
+      imageUrl: "https://www.w2globaldata.com/wp-content/uploads/2021/07/kyc-page-image.jpg",
     },
     {
       title: "Communication Management",
@@ -107,7 +107,7 @@ function Features() {
         "Scheduling & Automation",
         "Tracking and Reporting",
       ],
-      imageUrl: "https://t3softwares.com/wp-content/uploads/2023/09/5-1.png",
+      imageUrl: "https://www.softqubes.com/wp-content/uploads/2024/05/The-Role-of-Communication-in-Successful-Project-Management-1.webp",
     },
   ];
 
@@ -120,13 +120,13 @@ function Features() {
         >
           {/* Feature */}
           <div className={index % 2 === 0 ? "" : "order-1 md:order-2"}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight hover:text-blue-600 transition-colors duration-300">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight transition-colors duration-300">
               {feature.title}
             </h2>
             <p className="text-lg text-gray-600 mt-4">{feature.description}</p>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800">
               {feature.listItems.map((item, i) => (
-                <ul key={i} className="hover:text-blue-500 transition-colors duration-300">
+                <ul key={i} className=" transition-colors duration-300">
                   <li className="flex items-center gap-2">
                     <span className="text-blue-500 text-xl">✔</span> {item}
                   </li>
@@ -140,7 +140,7 @@ function Features() {
             <img
               src={feature.imageUrl}
               alt={feature.title}
-              className="w-full max-w-md md:max-w-lg hover:scale-105 transition-transform duration-300"
+              className="w-96 max-w-md md:max-w-lg transition-transform duration-300"
             />
           </div>
         </div>

@@ -25,9 +25,9 @@ const AboutUs = () => {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="https://img.freepik.com/free-vector/teamwork-concept-landing-page_52683-20165.jpg" // Replace this URL with your actual image source
+            src="https://static.vecteezy.com/system/resources/thumbnails/034/119/337/small_2x/email-marketing-3d-illustration-email-marketing-campaign-newsletter-marketing-and-email-service-png.png" // Replace this URL with your actual image source
             alt="About Us"
-            className="w-full max-w-sm md:max-w-md rounded-lg shadow-lg"
+            className="w-full max-w-sm md:max-w-md rounded-lg"
           />
         </div>
       </div>
