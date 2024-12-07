@@ -5,7 +5,6 @@ import Nav from "../components/Nav";
 import Universities from "../components/Universities";
 import Features from "../components/Features";
 import AboutUs from "../components/AboutUs";
-import ContactUs from "../components/Contact";
 
 
 
@@ -18,7 +17,6 @@ function Landing() {
             <Features/>
             <AboutUs/>
             <FAQ/>
-            <ContactUs/>
             <Footer/>
         </div>
     );

@@ -15,23 +15,20 @@ function Footer() {
               <span className="text-black text-3xl font-bold">y</span>
             </div>
             <div>
-            <p className="text-md text-gray-600">+123456789</p>
-            <p className="text-md text-gray-600">example@gmail.com</p>
+            <p className="text-md text-gray-600">+91-11 49 384 555</p>
+            <a href="mailto:info@bigwigmedia.in" className="text-md text-gray-600">info@bigwigmedia.in</a>
             </div>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-500 hover:text-gray-800">
-                <i className="fab fa-linkedin fa-2xl"></i>
-              </a>
-              <a href="#" className="text-gray-500 hover:text-gray-800">
+              <a href="https://x.com/bigwig_media" target='blank' className="text-gray-500 hover:text-gray-800">
                 <i className="fab fa-twitter fa-2xl"></i>
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-800">
+              <a href="https://www.facebook.com/bigwigmedia.in/" target='blank' className="text-gray-500 hover:text-gray-800">
                 <i className="fab fa-facebook fa-2xl"></i>
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-800">
+              <a href="https://www.instagram.com/bigwigmedia/" target='blank' className="text-gray-500 hover:text-gray-800">
                 <i className="fab fa-instagram fa-2xl"></i>
               </a>
-              <a href="#" className="text-gray-500 hover:text-gray-800">
+              <a href="https://www.youtube.com/channel/UCA0GIfKW7ORxUT6_mMnEEzQ" target='blank' className="text-gray-500 hover:text-gray-800">
                 <i className="fab fa-youtube fa-2xl"></i>
               </a>
             </div>

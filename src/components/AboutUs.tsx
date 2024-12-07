@@ -9,11 +9,10 @@ const AboutUs = () => {
             About Us
           </h2>
           <p className="text-lg text-gray-600 mt-4">
-            At Unify, we are passionate about providing innovative solutions that simplify your day-to-day tasks. 
-            Our team is committed to delivering high-quality tools and experiences that empower businesses and individuals to achieve their goals efficiently.
+          We embarked on a journey fueled by a simple question, “Why does the admission process have to be so difficult for parents, students, and education organizations?” And that gave birth to the first-in-industry application automation platform for education organizations, with NoPaperForms becoming our identity.
           </p>
           <p className="text-lg text-gray-600 mt-4">
-            With years of expertise in technology and customer-centric design, we strive to make a meaningful impact on the world through our products and services.
+          We kept scaling the depth and breadth of our product, and our solutions expanded within the education industry, from EdTech Companies, Coaching & Training Institutes, Study Abroad Consultants, K12 Schools, Play & Pre-Schools to Higher Education Institutions.
           </p>
           <a
             href="#contact"
