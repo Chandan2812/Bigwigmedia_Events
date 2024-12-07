@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import Universities from "../components/Universities";
 import Features from "../components/Features";
 import AboutUs from "../components/AboutUs";
+import StatsSection from "../components/Stats";
 
 
 
@@ -14,6 +15,7 @@ function Landing() {
             <Nav/>
             <Hero/>
             <Universities/>
+            <StatsSection/>
             <Features/>
             <AboutUs/>
             <FAQ/>
