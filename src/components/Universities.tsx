@@ -5,16 +5,16 @@ function Universities() {
 
         <h1 className="mt-12 md:mt-20 text-2xl md:text-3xl font-bold text-center text-gray-700">The lifeblood of Admission Management in India!</h1>
         <div className="grid grid-cols-2 md:grid-cols-6 p-8 md:p-14 gap-10">
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/Manipal.png" alt="" />
+            <img src="https://www.fillandfind.com/uploads/logo/Jaipur-National-Universitydetail-at-fillandfind-com-201805141505552034938179.png" alt="" />
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/SRM.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/shiv-nadar.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/NMAT.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/NMIS.png" alt="" />
+            <img src="https://imik.edu.in/wp-content/themes/imik/theme_assets/img/imi-logo-final.jpg" alt="" />
+            <img src="https://www.admissionindia.net/uploads/colleges/165/logo_with_red_font_(1).png" alt="" />
+            <img src="https://indiaontrack.in/img/logo3/logo16.png" alt="" />
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/XLRI.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/Jain-Online.png" alt="" />
+            <img src="https://rekhashelke.wordpress.com/wp-content/uploads/2020/12/main-logo-300x197-1.png" alt="" />
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2020/06/1200px-S._P._Jain_Institute_of_Management_and_Research_logo.svg-1.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/11/OP-Jindal-copy.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2020/06/Bennett-University-logo-copy.png" alt="" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe2MHECScQ4gqKK6DlhZvE5Bl2pSKn9__8Gg&s" alt="" />
+            <img src="https://cumulusassociation.org/wp-content/uploads/2021/10/1297_logo_1280.jpg" alt="" />
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2020/06/Lovely-Professional-University-Logo.png" alt="" />
             <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2020/06/Galgotias-1.png" alt="" />
         </div>
