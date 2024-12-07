@@ -116,7 +116,7 @@ function Features() {
       {featureData.map((feature, index) => (
         <div
           key={index}
-          className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-2 md:gap-8 mt-${index === 0 ? 0 : 16}`}
+          className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-2 md:gap-8 mt-${index === 0 ? 0 : 16} mt-10`}
         >
           {/* Feature */}
           <div className={index % 2 === 0 ? "" : "order-1 md:order-2"}>

@@ -68,9 +68,6 @@ function Nav() {
           <button onClick={() => handleScrollToSection('about')} className="hover:text-black">
             About Us
           </button>
-          <button onClick={() => handleScrollToSection('contact')} className="hover:text-black">
-            Contact
-          </button>
         </div>
 
         <div className="md:block hidden">
@@ -98,9 +95,6 @@ function Nav() {
           </button>
           <button onClick={() => handleScrollToSection('about')} className="hover:text-black">
             About Us
-          </button>
-          <button onClick={() => handleScrollToSection('contact')} className="hover:text-black">
-            Contact
           </button>
           <button
             onClick={() => handleScrollToSection('faq')}
