@@ -98,7 +98,7 @@ function Footer() {
 
         <div className="mt-8 text-center border-t pt-4">
           <p className="text-sm text-gray-600">
-            All Rights Reserved © 2024 NoPaperForms Solutions Pvt. Ltd.
+          All Rights Reserved © 2024 Bigwigmedia & Events Pvt. Ltd.
           </p>
         </div>
       </div>
