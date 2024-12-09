@@ -58,7 +58,7 @@ const StatsSection = () => {
           <div className="bg-[#172850] rounded-md p-6 w-full md:w-auto md:p-16">
             <p className="text-3xl font-bold">1000+</p>
             <p className="mt-2 text-lg">
-              Education organizations trust Meritto
+              Education organizations trust Unify
             </p>
           </div>
         </div>
