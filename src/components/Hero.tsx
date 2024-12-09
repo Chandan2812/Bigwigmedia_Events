@@ -137,14 +137,13 @@ background-color: var(--white-color);
     margin-bottom: 1rem;
 
     @media (max-width: 768px) {
-        height: 300px; /* Reduced height for mobile view */
+        height: 300px;
     }
 `;
 
 const Logo = styled.img`
-    width: 100%;  /* Full width of container */
-    height: 100%;  /* Full height of container */
-    object-fit:fill ;  /* Ensure the image covers the container without stretching */
+    width: 100%; 
+    height: 100%; 
 `;
 
 export default Hero;
