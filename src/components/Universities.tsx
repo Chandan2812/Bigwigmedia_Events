@@ -1,3 +1,16 @@
+import jaipur from "../assets/universities/jaipur.webp";
+import srm from "../assets/universities/SRM.webp";
+import imi from "../assets/universities/imi.webp";
+import nims from "../assets/universities/nims.webp";
+import anant from "../assets/universities/anant.webp";
+import auro from "../assets/universities/auro.webp";
+import galgotias from "../assets/universities/Galgotias-1.webp";
+import gandhi from "../assets/universities/gandhi.webp";
+import global from "../assets/universities/global.webp";
+import lpu from "../assets/universities/Lovely-Professional-University-Logo.webp";
+import spjain from "../assets/universities/sp jain.webp";
+import xlri from "../assets/universities/XLRI.webp";
+import crm from "../assets/CRM-Funnel-Updated-02.webp";
 
 function Universities() {
     return (
@@ -5,18 +18,18 @@ function Universities() {
 
         <h1 className="mt-12 md:mt-20 text-2xl md:text-3xl font-bold text-center text-gray-700">The lifeblood of Admission Management in India!</h1>
         <div className="grid grid-cols-2 md:grid-cols-6 p-8 md:p-14 gap-10">
-            <img src="https://www.fillandfind.com/uploads/logo/Jaipur-National-Universitydetail-at-fillandfind-com-201805141505552034938179.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/SRM.png" alt="" />
-            <img src="https://imik.edu.in/wp-content/themes/imik/theme_assets/img/imi-logo-final.jpg" alt="" />
-            <img src="https://www.admissionindia.net/uploads/colleges/165/logo_with_red_font_(1).png" alt="" />
-            <img src="https://indiaontrack.in/img/logo3/logo16.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2022/07/XLRI.png" alt="" />
-            <img src="https://rekhashelke.wordpress.com/wp-content/uploads/2020/12/main-logo-300x197-1.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2020/06/1200px-S._P._Jain_Institute_of_Management_and_Research_logo.svg-1.png" alt="" />
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe2MHECScQ4gqKK6DlhZvE5Bl2pSKn9__8Gg&s" alt="" />
-            <img src="https://cumulusassociation.org/wp-content/uploads/2021/10/1297_logo_1280.jpg" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2020/06/Lovely-Professional-University-Logo.png" alt="" />
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2020/06/Galgotias-1.png" alt="" />
+            <img src={jaipur} alt="" />
+            <img src={srm} alt="" />
+            <img src={imi} alt="" />
+            <img src={nims} alt="" />
+            <img src={global} alt="" />
+            <img src={xlri} alt="" />
+            <img src={gandhi} alt="" />
+            <img src={spjain} alt="" />
+            <img src={auro} alt="" />
+            <img src={anant} alt="" />
+            <img src={lpu} alt="" />
+            <img src={galgotias} alt="" />
         </div>
 
         <div className="bg-gradient-to-b from-blue-50 via-gray-100 to-white py-16">
@@ -29,7 +42,7 @@ function Universities() {
             <p className="text-justify md:text-center text-gray-600 px-8 mt-6 md:mt-10 text-lg md:text-xl md:max-w-6xl mx-auto">
             Unify transforms admissions into a seamless and unified operation. By centralizing inquiries, automating application processing, offering customizable post-application workflows, and enabling rapid enrollment with an integrated payment solution, Unify brings your teams together on a single platform. This not only improves efficiency but also elevates the candidate experience, setting a new standard for the future of higher education admissions.
             </p>
-            <img src="https://dzcu0rfa3nwu9.cloudfront.net/wp-content/uploads/2023/07/CRM-Funnel-Updated-02.png" alt="" className="mt-10 md:mt-16 mx-auto md:max-w-2xl " />
+            <img src={crm}alt="" className="mt-10 md:mt-16 mx-auto md:max-w-2xl " />
         </div>
 
         </div>

@@ -1,4 +1,4 @@
-
+import about from "../assets/about-us.webp"
 const AboutUs = () => {
   return (
     <section id="about" className="bg-gray-100 py-16 px-8 md:px-14 lg:px-20">
@@ -25,7 +25,7 @@ const AboutUs = () => {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/034/119/337/small_2x/email-marketing-3d-illustration-email-marketing-campaign-newsletter-marketing-and-email-service-png.png" // Replace this URL with your actual image source
+            src={about} // Replace this URL with your actual image source
             alt="About Us"
             className="w-full max-w-sm md:max-w-md rounded-lg"
           />

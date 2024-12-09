@@ -1,3 +1,12 @@
+import admission from '../assets/features/admission5.webp';
+import application from "../assets/features/paidApplication.webp";
+import lead from "../assets/features/lead-management.webp";
+import conselor from "../assets/features/counselor.webp";
+import student from "../assets/features/student panel.webp";
+import admin from "../assets/features/admin panel.webp";
+import vendor from "../assets/features/vendor.webp";
+import document from "../assets/features/document (1).webp";
+import communication from '../assets/features/communication.webp';
 
 function Features() {
   const featureData = [
@@ -11,7 +20,7 @@ function Features() {
         "Improved Tracking",
         "Seamless Workflow",
       ],
-      imageUrl: "https://ishinfo.com/images/admission5.png",
+      imageUrl: admission,
     },
     {
       title: "Paid Application Management",
@@ -23,7 +32,7 @@ function Features() {
         "Payment Confirmation",
         "Transparency in Payment Process",
       ],
-      imageUrl: "https://www.paatham.in/assets/images/1.webp",
+      imageUrl: application,
     },
     {
       title: "Lead Management",
@@ -35,7 +44,7 @@ function Features() {
         "Performance Monitoring",
         "Conversion Optimisation",
       ],
-      imageUrl: "https://www.whsuites.com/wp-content/uploads/2019/08/lead-management-1024x930.png",
+      imageUrl: lead,
     },
     {
       title: "Counselor Management",
@@ -47,7 +56,7 @@ function Features() {
         "Centralised Communication",
         "Real-Time Insights",
       ],
-      imageUrl: "https://www.shutterstock.com/image-vector/female-psychotherapist-has-individual-session-600nw-2338163245.jpg",
+      imageUrl: conselor,
     },
     {
       title: "Student Panel",
@@ -59,7 +68,7 @@ function Features() {
         "Fee Management",
         "Call History",
       ],
-      imageUrl: "https://static.vecteezy.com/system/resources/previews/023/129/004/non_2x/character-high-school-student-in-school-uniform-illustration-vector.jpg",
+      imageUrl: student,
     },
     {
       title: "Admin Panel",
@@ -71,7 +80,7 @@ function Features() {
         "Staff Monitoring",
         "Real-Time Performance Tracking",
       ],
-      imageUrl: "https://themeselection-cdn.b-cdn.net/wp-content/uploads/2022/07/category-laravel.png",
+      imageUrl: admin,
     },
     {
       title: "Vendor Management Panel",
@@ -83,7 +92,7 @@ function Features() {
         "Centralized Communication",
         "Improved Collaboration",
       ],
-      imageUrl: "https://media.licdn.com/dms/image/C5112AQHEb--L7Wfg7g/article-cover_image-shrink_600_2000/0/1587203952366?e=2147483647&v=beta&t=WuVfGMbeHjQrIHEmRTugRLH9cIUkIY8M-BSXS_MCCUk",
+      imageUrl: vendor,
     },
     {
       title: "Document Verification",
@@ -95,7 +104,7 @@ function Features() {
         "Compliance Monitoring",
         "Authenticity Checks",
       ],
-      imageUrl: "https://www.w2globaldata.com/wp-content/uploads/2021/07/kyc-page-image.jpg",
+      imageUrl: document,
     },
     {
       title: "Communication Management",
@@ -107,7 +116,7 @@ function Features() {
         "Scheduling & Automation",
         "Tracking and Reporting",
       ],
-      imageUrl: "https://www.softqubes.com/wp-content/uploads/2024/05/The-Role-of-Communication-in-Successful-Project-Management-1.webp",
+      imageUrl: communication,
     },
   ];
 
