@@ -7,6 +7,7 @@ import Features from "../components/Features";
 import AboutUs from "../components/AboutUs";
 import StatsSection from "../components/Stats";
 import { useEffect, useState } from "react";
+import Blog from "../components/Blog";
 
 
 
@@ -42,6 +43,7 @@ function Landing() {
             <StatsSection/>
             <Features/>
             <AboutUs/>
+            <Blog/>
             <FAQ/>
             <Footer/>
             {isVisible && (
