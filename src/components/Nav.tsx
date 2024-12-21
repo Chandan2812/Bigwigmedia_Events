@@ -79,26 +79,48 @@ function Nav() {
             Home
           </button>
           <div
-            className="relative"
-            onMouseEnter={() => setIsDropdownOpen(true)}
-            onMouseLeave={() => setIsDropdownOpen(false)}
-          >
-            <button className="hover:text-black">Features</button>
+  className="relative"
+  onMouseEnter={() => setIsDropdownOpen(true)}
+  onMouseLeave={() => setIsDropdownOpen(false)}
+>
+  {/* Features Button with Dropdown Icon */}
+  <button className="hover:text-black flex items-center">
+    Features
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="2"
+      stroke="currentColor"
+      className="w-4 h-4 ml-1 transition-transform duration-200"
+      style={{
+        transform: isDropdownOpen ? "rotate(180deg)" : "rotate(0deg)",
+      }}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
 
-            {isDropdownOpen && (
-              <div className="absolute left-[-100px] bg-white shadow-lg rounded-lg p-4 grid grid-cols-3 gap-4 w-[600px] h-[300px] z-50">
-                {features.map((feature, index) => (
-                  <button
-                    key={index}
-                    onClick={() => handleScrollToSection(feature.id)}
-                    className="text-gray-600 hover:text-black text-sm"
-                  >
-                    {feature.name}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
+  {/* Dropdown Menu */}
+  {isDropdownOpen && (
+    <div className="absolute left-[-100px] bg-white shadow-lg rounded-lg p-4 grid grid-cols-3 gap-4 w-[600px] h-[300px] z-50">
+      {features.map((feature, index) => (
+        <button
+          key={index}
+          onClick={() => handleScrollToSection(feature.id)}
+          className="text-gray-600 hover:text-black text-sm"
+        >
+          {feature.name}
+        </button>
+      ))}
+    </div>
+  )}
+</div>
+
           <button onClick={() => handleScrollToSection('about')} className="hover:text-black">
             About Us
           </button>

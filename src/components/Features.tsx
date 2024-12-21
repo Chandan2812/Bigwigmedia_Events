@@ -73,7 +73,7 @@ function Features() {
         "Call History",
       ],
       imageUrl: student,
-      id: "studet-panel"
+      id: "student-panel"
     },
     {
       title: "Admin Panel",
