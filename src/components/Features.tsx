@@ -21,6 +21,7 @@ function Features() {
         "Seamless Workflow",
       ],
       imageUrl: admission,
+      id: "admission-management",
     },
     {
       title: "Paid Application Management",
@@ -33,6 +34,7 @@ function Features() {
         "Transparency in Payment Process",
       ],
       imageUrl: application,
+      id: "paid-application-management",
     },
     {
       title: "Lead Management",
@@ -45,6 +47,7 @@ function Features() {
         "Conversion Optimisation",
       ],
       imageUrl: lead,
+      id: "lead-management"
     },
     {
       title: "Counselor Management",
@@ -57,6 +60,7 @@ function Features() {
         "Real-Time Insights",
       ],
       imageUrl: conselor,
+      id: "counselor-management"
     },
     {
       title: "Student Panel",
@@ -69,6 +73,7 @@ function Features() {
         "Call History",
       ],
       imageUrl: student,
+      id: "studet-panel"
     },
     {
       title: "Admin Panel",
@@ -81,6 +86,7 @@ function Features() {
         "Real-Time Performance Tracking",
       ],
       imageUrl: admin,
+      id: "admin-panel"
     },
     {
       title: "Vendor Management Panel",
@@ -93,6 +99,7 @@ function Features() {
         "Improved Collaboration",
       ],
       imageUrl: vendor,
+      id: "vendor-management-panel"
     },
     {
       title: "Document Verification",
@@ -105,6 +112,7 @@ function Features() {
         "Authenticity Checks",
       ],
       imageUrl: document,
+      id: "document-verification"
     },
     {
       title: "Communication Management",
@@ -117,6 +125,7 @@ function Features() {
         "Tracking and Reporting",
       ],
       imageUrl: communication,
+      id: "communication-management"
     },
   ];
 
@@ -125,6 +134,7 @@ function Features() {
       {featureData.map((feature, index) => (
         <div
           key={index}
+          id={feature.id}
           className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-2 md:gap-8 mt-${index === 0 ? 0 : 16} mt-10`}
         >
           {/* Feature */}
