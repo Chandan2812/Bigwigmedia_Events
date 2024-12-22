@@ -37,10 +37,10 @@ function Universities() {
                 Embrace Enrollment Growth with Unify’s Higher Education Admissions CRM
             </h1>
             <p className="text-justify md:text-center text-gray-600 px-8 mt-4 md:mt-6 text-lg md:text-xl md:max-w-6xl mx-auto">
-            Unify CRM, formerly known as NoPaperForms, is revolutionizing higher education admissions by streamlining traditionally fragmented processes. Outdated methods often result in stakeholder disconnects, inefficiencies, assumption-based decisions, low conversion rates, and a subpar experience for prospective students.
+            Admissions, meet Unify CRM (formerly NoPaperForms), the superhero your higher ed needs! Gone are the days of cobbled-together processes, misplaced applications, and decision-making that felt more like a guessing game. Seriously, who knew admissions could be this disorganized?
             </p>
             <p className="text-justify md:text-center text-gray-600 px-8 mt-6 md:mt-10 text-lg md:text-xl md:max-w-6xl mx-auto">
-            Unify transforms admissions into a seamless and unified operation. By centralizing inquiries, automating application processing, offering customizable post-application workflows, and enabling rapid enrollment with an integrated payment solution, Unify brings your teams together on a single platform. This not only improves efficiency but also elevates the candidate experience, setting a new standard for the future of higher education admissions.
+            Unify swoops in like a caped crusader, turning chaos into calm. It centralizes your inquiries (no more "Who emailed who again?"), automates applications (because manually chasing forms is so last century), customizes post-application workflows (think: your admissions, your way), and turbocharges enrollment with an integrated payment system (less "wait, how do I pay?" and more "where do I sign up?").
             </p>
             <img src={crm}alt="" className="mt-10 md:mt-16 mx-auto md:max-w-2xl " />
         </div>

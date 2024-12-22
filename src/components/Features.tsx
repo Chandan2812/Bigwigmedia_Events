@@ -13,7 +13,7 @@ function Features() {
     {
       title: "Admission Management",
       description:
-        "Streamline your entire admission process, from student application submission to final enrollment. Centralize student data and improve communication with real-time status updates and easy tracking.",
+        "Turn your chaotic admission process into a well-oiled machine. From applications to enrollments, centralize data and keep everyone in the loop with real-time updates—no more \"Who dropped the ball?\" moments.",
       listItems: [
         "Real-Time Updates",
         "Data Centralization",
@@ -26,7 +26,7 @@ function Features() {
     {
       title: "Paid Application Management",
       description:
-        "Manage applications with integrated payment systems. Allow students to apply and pay easily, ensuring a smooth and transparent payment process.",
+        "Say goodbye to payment confusion. With integrated payment systems, students can apply and pay in a snap, while you enjoy a smoother, less headachy process. Everyone wins!",
       listItems: [
         "Integrated Payment",
         "Simple User Flow",
@@ -39,7 +39,7 @@ function Features() {
     {
       title: "Lead Management",
       description:
-        "Centralize, manage, and distribute your leads effectively. Track lead performance, source, and scoring metrics to improve conversions.",
+        "Get a grip on your leads! Track where they’re coming from, how they’re scoring, and who’s converting—because guessing is so last year.",
       listItems: [
         "Lead Source Tracking",
         "Lead Scoring",
@@ -47,12 +47,12 @@ function Features() {
         "Conversion Optimisation",
       ],
       imageUrl: lead,
-      id: "lead-management"
+      id: "lead-management",
     },
     {
       title: "Counselor Management",
       description:
-        "Monitor and evaluate counselor performance, improve engagement, and streamline communication between students and counselors.",
+        "Keep your counselors on their toes! Monitor performance, boost engagement, and make sure students and counselors are on the same page (finally).",
       listItems: [
         "Counselor Performance Tracking",
         "Improved Engagement",
@@ -60,12 +60,12 @@ function Features() {
         "Real-Time Insights",
       ],
       imageUrl: conselor,
-      id: "counselor-management"
+      id: "counselor-management",
     },
     {
       title: "Student Panel",
       description:
-        "Empower students with a centralized panel for communication, application scoring, fee management, and call history. A seamless way for students to manage all aspects of their application and communication with your institution.",
+        "Put the power in the hands of your students. With a one-stop-shop for communication, fees, and application updates, they’ll wonder how they ever survived without it.",
       listItems: [
         "Communication Hub",
         "Application Scoring",
@@ -73,12 +73,12 @@ function Features() {
         "Call History",
       ],
       imageUrl: student,
-      id: "student-panel"
+      id: "student-panel",
     },
     {
       title: "Admin Panel",
       description:
-        "Manage and oversee the entire institution through a comprehensive admin panel. Control admissions, view reports, and monitor staff and performance from one central platform.",
+        "Calling all admins! Run your institution like a boss with a panel that does it all—reports, staff monitoring, and admissions. It’s basically your command center.",
       listItems: [
         "Institution-wide Control",
         "Reports and Analytics",
@@ -86,12 +86,12 @@ function Features() {
         "Real-Time Performance Tracking",
       ],
       imageUrl: admin,
-      id: "admin-panel"
+      id: "admin-panel",
     },
     {
       title: "Vendor Management Panel",
       description:
-        "Streamline vendor relationships and track performance with a centralized vendor management system. Monitor metrics to optimize vendor performance and improve collaboration.",
+        "Wrangle your vendors like a pro. Centralized communication and performance tracking mean better relationships and fewer headaches. Vendors will love you for it (probably).",
       listItems: [
         "Vendor Performance Tracking",
         "Streamlined Relationships",
@@ -99,12 +99,12 @@ function Features() {
         "Improved Collaboration",
       ],
       imageUrl: vendor,
-      id: "vendor-management-panel"
+      id: "vendor-management-panel",
     },
     {
       title: "Document Verification",
       description:
-        "Simplify document verification with an automated and secure system. Validate submitted documents for authenticity and ensure compliance effortlessly.",
+        "Tired of playing detective with documents? Automate the verification process and catch those sneaky fake ones—no magnifying glass needed.",
       listItems: [
         "Automated Verification",
         "Secure Document Handling",
@@ -112,12 +112,12 @@ function Features() {
         "Authenticity Checks",
       ],
       imageUrl: document,
-      id: "document-verification"
+      id: "document-verification",
     },
     {
       title: "Communication Management",
       description:
-        "Manage all forms of communication (emails, WhatsApp, SMS) from one platform. Streamline messaging, scheduling, and tracking to improve student interaction and follow-ups.",
+        "Email? WhatsApp? SMS? Keep your communication chaos-free by managing everything in one place. Schedule, automate, and track like the messaging wizard you are.",
       listItems: [
         "Centralized Communication",
         "Multi-Channel Support",
@@ -125,9 +125,10 @@ function Features() {
         "Tracking and Reporting",
       ],
       imageUrl: communication,
-      id: "communication-management"
+      id: "communication-management",
     },
   ];
+  
 
   return (
     <div id="features" className="py-16 px-8 sm:px-12">
