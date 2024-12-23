@@ -51,7 +51,7 @@ function Nav() {
           <span className="text-blue-500 text-2xl font-bold">n</span>
           <span className="text-yellow-500 text-2xl font-bold">i</span>
           <span className="text-green-500 text-2xl font-bold">f</span>
-          <span className="text-black text-2xl font-bold">y</span>
+          <span className="text-violet-700 text-2xl font-bold">y</span>
         </div>
 
         <button
